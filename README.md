@@ -1,2 +1,2 @@
 # Hlang
-A Simple Lispy Toy programming language written in JavaScript!
+A Simple and Lispy Toy scripting language written in JavaScript!
