@@ -1,4 +1,12 @@
-(function( root ) {
+/**
+  @author Oyedele Hammed
+  @description A Simple and Lispy Toy Scripting language in JavaScript!
+  @version 0.1
+  @see https://github.com/devHammed/Hlang
+  @since July 16, 2018
+*/
+
+( function( root ) {
 
   var tokenize = function tokenize( input ) {
     var escapeMap = {
@@ -161,9 +169,9 @@
     var code = [].slice.call( arguments ).join('\n');
     try {
       return evaluate( parse( tokenize( code ) ), stdEnv );
-    } catch( e ) {
+    } catch ( e ) {
       console.error( e );
     }
-  }
+  };
 
-})( typeof exports !== 'undefined' ? exports : this );
+} )( typeof exports !== 'undefined' ? exports : this );
